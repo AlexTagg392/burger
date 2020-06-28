@@ -5,7 +5,7 @@ var burger = require("../models/burger.js");
 
 // Router
 router.get("/", function(req, res) {
-    cat.selectAll(function(data) {
+    burger.selectAll(function(data) {
       var hbsObject = {
         burgers: data
       };
@@ -15,7 +15,7 @@ router.get("/", function(req, res) {
   });
   
   router.post("/api/burgers", function(req, res) {
-    cat.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
+    burger.insertOne(["burger_name", "devoured"], [req.body.burger_name, req.body.devoured], function(result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });
