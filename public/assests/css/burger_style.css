@@ -1,17 +1,26 @@
-li {
+body {
+  background-color: rgb(190, 13, 13);
+  text-align: center;
+}
+
+button {
+  background-color: teal;
+}
+
+ul {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    background: thistle;
   }
   
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
+  .create-form {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: thistle;
   }
   
   .form-group {
