@@ -2,6 +2,8 @@ var express = require("express");
 var router = express.Router();
 var burger = require("../models/burger.js");
 
+app.get("/", function(req, res) {
+  res.json(path.join(__dirname, "public/assests/index.handlebars"));
 
 // Router
 router.get("/", function(req, res) {
